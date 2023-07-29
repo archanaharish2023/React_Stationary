@@ -1,0 +1,943 @@
+/* Custom styles for the Navbar */
+.custom-navbar {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.logo {
+  max-height: 50px; /* Increase the max-height to make the logo bigger */
+  margin-right: 10px;
+  background-color: #f9f9f9;
+}
+
+.navbar-brand {
+  font-size: 30px !important; /* Increase the font size for the brand text */
+  font-weight: bold;
+  color: #333;
+  font-family: "FontAwesome";
+}
+
+.nav-link {
+  font-size: 18px !important;
+  font-weight: bold;
+  color: #555;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  border-radius: 20px;
+  width: 500px; /* Adjust the width of the search bar to make it visible */
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Carousel.css */
+
+/* Custom styles for the Carousel */
+.carousel-slide {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100%);
+  /* background-color: rgba(66, 56, 56, 0.8); */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 45px;
+  font-weight: bold;
+  opacity: 0;
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.carousel-text.visible {
+  opacity: 1;
+  transform: translateX(-50%);
+  animation: fadeInAndMove 2s forwards, stayVisible 5s forwards,
+    fadeOutAndMove 2s forwards 7s;
+}
+
+/* Animation for fade-in and move in */
+@keyframes fadeInAndMove {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+/* Animation to make the text stay visible in the center */
+@keyframes stayVisible {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation for fade-out and move out */
+@keyframes fadeOutAndMove {
+  from {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* FeaturesSection.css */
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #f8f8f8;  */
+  /* Set the background color to your desired color */
+  padding: 40px 0; /* Add padding to create space between the features and other content */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-item i {
+  color: rgb(30, 48, 80);
+  margin-top: 50px;
+  /* padding: 10px; */
+  font-size: 60px;
+  width: 80px; /* Set the size of the icons */
+  height: 50px;
+  /* margin-bottom: 10px;  */
+}
+
+.feature-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333; /* Set the font color for the feature text */
+}
+
+/* src/AboutUsSection.css */
+
+.about-us-section {
+  display: flex;
+  background-image: url("https://a-static.besthdwallpaper.com/new-year-2021-stationary-planner-and-sticky-notes-wallpaper-3000x2000-60384_42.jpg");
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-size: cover; /* Set the background image to cover the entire section */
+  height: 750px;
+  background-attachment: fixed;
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-image: url("https://image.slidesdocs.com/responsive-images/background/stationery-decoration-book-education-pink-professional-powerpoint-background_843997d27b__960_540.jpg"); */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Add a light background color to the content container */
+  /* opacity: 0.5; */
+  border-radius: 15px; /* Add a rounded corner effect */
+  padding: 70px;
+  width: 950px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px; /* Create a half-circle shape */
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  max-width: 600px;
+  padding-left: 40px; /* Add some spacing between the image and content */
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333; /* Set the font color for the heading */
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666; /* Set the font color for the paragraph */
+}
+
+.loader-container {
+  padding: 15%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------Latest arrivals */
+
+.card-style {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-size: cover; /* Set the background image to cover the entire section */
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  /* background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-stationery-office-supplies-poster-banner-background-image_130323.jpg"); */
+}
+
+.latest-arrivals {
+  cursor: pointer;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  background-size: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-image: url("https://img.freepik.com/premium-photo/notebook-with-pen-pencil-yellow-background_78450-1887.jpg");
+}
+
+.kids-favorites {
+  cursor: pointer;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-image: url("https://img.freepik.com/premium-photo/frame-pastel-colored-school-supplies-pink-background-place-text-back-school-office-supplies-flat-lay-top-view-copy-space_261761-934.jpg?w=2000");
+}
+
+.animated-text {
+  font-style: italic;
+  font-size: 18px;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.card-title {
+  font-size: 34px !important; /* Adjust the font size as per your preference */
+}
+
+/* FeaturedOffers.css */
+
+.featured-offers {
+  padding: 40px 0;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+}
+
+.offers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offer-card {
+  width: 100%;
+  margin: 20px;
+  padding: 115px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg");
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+}
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+.offer-card h3 {
+  font-size: 70px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  font-size: 30px;
+  color: yellow;
+  font-weight: bold;
+  animation: fadeInOut 1s infinite;
+}
+
+/* src/ProductTypes.css */
+
+.product-types-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px; /* Increase the maximum width as per your preference */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.product-type-item {
+  cursor: pointer;
+  flex-basis: calc(
+    16.666% - 20px
+  ); /* Set the width of each item to 16.666% of the container minus some margin */
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add a transition effect for the hover effect */
+}
+
+.product-type-item:hover {
+  transform: scale(1.1); /* Increase the size of the circle on hover */
+}
+
+.product-type-item img {
+  width: 200px; /* Adjust the size of the product images as needed */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+.product-type-item p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+.text-style {
+  font-weight: bold;
+}
+
+/* src/FeaturedProducts.css */
+
+.featured-products-container {
+  /* background-color: #f0f0f0; */
+  /* background-image: url("https://img.freepik.com/free-photo/rows-assorted-stationery_23-2147851981.jpg"); */
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  margin-bottom: 30px;
+}
+
+.featured-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-10px); /* Apply a vertical lift effect on hover */
+}
+
+.discount {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.discount::before {
+  content: " ";
+  display: inline-block;
+  border: 8px solid transparent;
+  border-top: 8px solid #ff0000;
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.featured-card .card-title {
+  font-size: 20px !important;
+}
+/* Add custom styles for the card image */
+.featured-card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.original-price {
+  font-size: 16px;
+  text-decoration: line-through; /* Add a strike-through effect */
+  color: #888; /* Set the color for the original price */
+}
+
+.offer-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; /* Set the color for the offer price */
+}
+
+/* src/CardSection.css */
+
+.card-container {
+  padding: 20px;
+  display: flex;
+  height: 300px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card {
+  cursor: pointer;
+  flex: 1;
+  margin: 10px;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 75px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card1 {
+  background-image: url("https://img.freepik.com/premium-photo/different-stationary-mint-background-top-view-space-text_185193-13575.jpg");
+  background-size: cover;
+}
+
+.card2 {
+  background-image: url("https://img.freepik.com/free-photo/school-supplies-stationery-blue-back-school-concept-with-copy-space-text-flat-lay_73683-2245.jpg");
+  background-size: cover;
+}
+
+.card3 {
+  background-image: url("https://www.shutterstock.com/image-photo/stationery-on-green-background-pens-260nw-1153983085.jpg");
+  background-size: cover;
+}
+
+.card h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 20px;
+  /* color:white ; */
+  font-style: italic;
+}
+
+/* src/TopBrands.css */
+
+.top-brands-container {
+  background-color: #f9f9f9;
+  /* background-color: #f1f1f1; */
+  padding: 50px 0;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+ 
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 30px; /* Adjust the gap between items */
+  justify-items: center;
+}
+
+.brand-item {
+  width: 300px; /* Set the desired width for each brand logo */
+  height: 100px; /* Set the desired height for each brand logo */
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust image size while maintaining aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* src/Subscription.css */
+
+.subscription-container {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.subscription-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-form input {
+  padding: 10px;
+  width: 50% !important;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.subscription-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.subscription-form button:hover {
+  background-color: #e32e00;
+}
+
+/* src/Footer.css */
+
+.footer-container {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-column {
+  width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-media-icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-media-icons a {
+  color: black;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-media-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-media-icons a:hover {
+  color: black;
+}
+
+.footer-container .copyright {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+/* src/ProductTabs.css */
+
+.product-tabs-container {
+  padding: 40px 0;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-offer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5733;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.offer-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.product-prices {
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.offer-price {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Custom tab design */
+.nav-tabs {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #0e0d0d;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #ff5733;
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.nav-link.active {
+  color: #ff5733;
+}
+
+.nav-link.active::before {
+  width: 100%;
+  left: 0;
+}
+
+/* Journal.css */
+
+.journal-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.journal-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.journal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.journal-item {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.journal-item:hover {
+  transform: translateY(-5px);
+}
+
+.journal-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.journal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.journal-item:hover .journal-image img {
+  transform: scale(1.1);
+}
+
+.journal-content {
+  padding: 20px;
+}
+
+.journal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.journal-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .journal-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #ff5733;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  /* background-color: #e64c1c; */
+}
+
+.contact-us {
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px; /* Add a rounded corner effect */
+  padding: 70px;
+  width: 950px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px; /* Create a half-circle shape */
+}
+
+
+/* ProductList.css */
+
+.product-lists {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.product-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.add-to-cart {
+  background-color: #ff5733;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #e64c1c;
+}
