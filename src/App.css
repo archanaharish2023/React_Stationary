@@ -168,7 +168,7 @@ img {
   padding: 30px;
 }
 
-.contribution.content {
+.contribution .content {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -293,4 +293,19 @@ img {
   color: #ffffff;
   font-family: "poppins",sans-serif;
   text-align: center;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.cross-icon {
+  transition: transform 0.3s;
+}
+
+.close-button:hover .cross-icon {
+  transform: rotate(180deg);
 }

@@ -4,6 +4,15 @@ function Home() {
   return (
     <React.Fragment>
       <div className="wrapper">
+      <div className="close-button">
+        <img
+          src="images/cross.svg"
+          alt="Cross Icon"
+          width="30"
+          height="30"
+          className="cross-icon"
+        />
+      </div>
         <div className="header">
           <h1 className="content">
             Epic Games : An American video game and software developer<br></br>
