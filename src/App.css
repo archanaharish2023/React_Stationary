@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+/* SideBar Start */
+.bg-darkblue {
+  background-image: url("../public/Images/Rectangle\ 1.png");
+}
+#sidebar-list {
+  margin-top: 20px;
+}
+.briefcase {
+  width: 60px;
+  height: 65px;
+}
+.statboard {
+  width: 85px;
+}
+.briefcase-section {
+  margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav .nav-item {
+  width: 150px; /* Adjust the width according to your design */
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  width: 183px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-pills .nav-link.active {
+  background-color: white;
+  color: black;
+  width: 183px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav .nav-link {
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 30px;
   color: white;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Sidebar End */
+
+/* Right Section Start*/
+.bg-lt-blue {
+  background: #cfe2f6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.morning {
+  font-weight: 500;
+  margin: 30px 0 0 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.header-card .card {
+  /* display: flex; */
+  border: 1px solid white;
+}
+
+.header-card .card-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-style {
+  height: 400px;
+}
+
+#goo-loader {
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+.table-container {
+  border-radius: 10px; 
+  overflow-x: scroll; 
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.table th, .table td {
+  padding: 10px;
+  font-size: 12px;
+  border: 2px solid #ddd; 
+}
+
+#profile .card-text{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ /* Media Queries for Responsiveness */ 
+@media (max-width: 768px) {
+  .nav .nav-item {
+    width: 100%; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-pills .nav-link.active {
+    width: 100%; 
   }
+
+  .nav .nav-link {
+    margin-left: 0; 
+  }
+
+  .briefcase-section {
+    margin-left: 0;
+  }
+
+  .header {
+    flex-direction: row; 
+    text-align: center;
+  }
+
+  .header-card {
+    justify-content: center;
+  }
+
+  .card-style {
+    height: auto; 
+  }
+
+  .table th,
+  .table td {
+    font-size: 10px; 
+  }
+
+  #profile .card-text {
+    font-size: 10px; 
+  }
+
+  .morning {
+   
+    margin: 10px;
+  }
+}
+
+#sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow:none; 
+}
+
+
+.sidebar-logout {
+  position:fixed;
+  bottom: 0;
+  margin: 0;
+  width:200px
+}
+
+.logout-button {
+  width: 100%;
+  font-size: 12px;
+  font-family: "poppins","sans-serif";
+  padding: 10px;
+  background-color: white; /* Use your desired color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
